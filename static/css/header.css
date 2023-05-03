@@ -1,0 +1,617 @@
+:root {
+  --main: #F13030;
+  --accent: mediumpurple;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    position: fixed;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#header {
+    opacity: 0;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.inner_header {
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container-menu {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1 {
+    color: var(--main);
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 32px;
+    font-family: Antique Olive Black;
+    font-weight: 200;
+}
+
+.logo_container-menu h1 {
+    color: var(--accent);
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 32px;
+    font-family: Antique Olive Black;
+    font-weight: 200;
+}
+
+.logo_container-menu h1 a {
+    color: var(--accent);
+}
+.logo_container h1 a {
+    color: var(--main);
+}
+
+.nav {
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.nav a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0 20px;
+    color: white;
+}
+
+#close {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0 20px;
+    color: white;
+}
+
+.nav a li {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.nav {
+    height: 100%;
+    float: right;
+}
+
+.nav a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0 20px;
+    color: white;
+}
+
+
+.GetInTouch {
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid var(--accent);
+    border-radius: 100px;
+    transition: all 400ms;
+    font-weight: 600;
+}
+
+#test {
+    width: 31px;
+    right: 20px;
+    height: 31px;
+    color: white;
+    border-radius: 100px;
+    position: absolute;
+    padding: 10px 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#testing {
+    padding-left: 10px;
+}
+
+#test2 {
+    width: 15px;
+    height: 15px;
+    color: white;
+    border: 1px solid #d0b9fa;
+    border-radius: 100px;
+    padding: 18px 18px;
+    cursor: pointer;
+    transition-duration: 400ms;
+}
+
+#test2:hover {
+    transition-duration: 400ms;
+    border: 1px solid var(--main);
+}
+
+.flex-wrapper {
+    display: flex;
+}
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+@keyframes test {
+    from {
+        border-radius: 0 0 0 0;
+    }
+    to {
+        border-radius: 50% 50% 0 0/100% 100% 0 0;
+    }
+}
+
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+@keyframes anim {
+    from { border-radius: 0 0 50% 50%; }
+    to { border-radius: 0 0 0 0; }
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    bottom: 0;
+    background-color: #fafaf6;
+    overflow-x: hidden;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transition-delay: 500ms;
+    transition: .8s cubic-bezier(.4,0,0,1);
+}
+
+.closing {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    background-color: #fafaf6;
+    overflow-x: hidden;
+    border-radius: 0 0 100% 100%/0 0 100% 100%;
+    transition-delay: 500ms;
+    transition: .6s;
+}
+
+.overlay-content {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 8px;
+  right: 54px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.content1 {
+    width: 50%;
+    height: 100%;
+}
+
+.nav-menu-info {
+    margin-top: 2rem;
+    margin-bottom: -.4rem;
+    display: inline-block;
+}
+
+.nav-menu-info-line {
+    font-family: Antique Olive Black;
+    padding: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #a374ff;
+    font-size: .625rem;
+    color: gray;
+    transform: translateY(0px);
+    will-change: transform;
+}
+
+#sep {
+    margin-bottom: 5%;
+}
+
+.content1 h2 {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    color: #1d1d1f;
+}
+
+.content2 {
+    width: 50%;
+    height: 100%;
+    float: right;
+    line-height: .76471;
+    color: #1d1d1f;
+    font-family: Antique Olive Black;
+}
+
+.content2 ul {
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    text-transform: lowercase;
+    color: #1d1d1f;
+    font-size: 6.8rem;
+    letter-spacing: -.07em;
+    list-style: none;
+}
+
+
+.content2 li {
+    margin-top: 1rem;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.content2 li:first-child {
+    margin-top: 0;
+}
+
+.content2 a {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.content2 a span {
+    position: relative;
+    z-index: 20;
+}
+
+#selected .bar {
+    transform: scaleX(1);
+}
+#selected {
+    pointer-events: none;
+    cursor: default;
+}
+
+#notdone .bar-pink {
+    transform: scaleX(1);
+}
+#notdone {
+    pointer-events: none;
+    cursor: default;
+}
+
+.bar {
+    position: absolute;
+    background-color: var(--accent);
+    width: calc(100% + .075em);
+    left: 0;
+    top: .435em;
+    height: .115em;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .8s cubic-bezier(.4,0,0,1);
+}
+.content2 a:hover .bar {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.bar-yellow {
+    background-color: rgba(255,208,116, 1);
+    transition: transform .9s cubic-bezier(.4,0,0,1);
+
+}
+.content2 a:hover .bar-yellow {
+    transition: transform .7s cubic-bezier(.4,0,0,1);
+}
+.bar-pink {
+    background-color: var(--main);
+    transition: transform 1s cubic-bezier(.4,0,0,1);
+
+}
+.content2 a:hover .bar-pink {
+    transition: transform .6s cubic-bezier(.4,0,0,1);
+}
+
+
+#title-icon {
+    display: none;
+}
+
+@keyframes rotate {
+  from {rotate: 0deg;}
+  50% {scale: 1 1.2;}
+  to {rotate: 360deg;}
+}
+
+#blob {
+    background-color: white;
+    color: white;
+    height: 500px;
+    aspect-ratio: 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        var(--main),
+        var(--accent)
+    );
+    animation: rotate 15s infinite;
+    z-index: -1;
+}
+
+#blur {
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    backdrop-filter: blur(200px);
+}
+
+.circle-container {
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+    background-color: var(--accent);
+    position: absolute;
+    z-index: 0;
+    right: 20px;
+    border-radius: 9999px;
+    top: 0;
+}
+
+.circle-pink {
+    width: 51px;
+    height: 51px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    transform: scale(0);
+    border-radius: 9999px;
+    background-color: var(--main);
+    transform-origin: bottom;
+    z-index: 1;
+}
+
+#testing div:hover .circle-pink {
+    transform: scale(1);
+    transition: transform .2s;
+}
+
+
+.circle-yellow {
+    width: 50px;
+    aspect-ratio: 1;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    transform: scale(0);
+    border-radius: 9999px;
+    background-color: rgba(255,208,116, 1);
+    transform-origin: bottom;
+    z-index: 1;
+}
+
+#testing div:hover .circle-yellow {
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.circle-purple {
+    width: 51px;
+    height: 51px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    transform: scale(0);
+    border-radius: 9999px;
+    background-color: var(--accent);
+    transform-origin: bottom;
+    z-index: 1;
+}
+
+#testing div:hover .circle-purple {
+    transform: scale(1);
+    transition: transform .8s;
+}
+
+#testing div {
+    width: 51px;
+    height: 51px;
+    z-index: 0;
+}
+
+@keyframes blink {
+    from { height: 0px; }
+    5% { height: 15px; }
+    10% { height: 0px; }
+    15% { height: 15px; }
+    20% { height: 0px; }
+    25% { height: 0px; }
+    30% { height: 15px; }
+    35% { height: 0px; }
+    to { height: 0px; }
+}
+
+#eye1 {
+    background-color: var(--main);
+    position: absolute;
+    width: 10px;
+    height: 0px;
+    left: 62px;
+    top: 22px;
+}
+
+
+#eye2 {
+    background-color: var(--main);
+    position: absolute;
+    width: 10px;
+    height: 0px;
+    left: 83px;
+    top: 22px;
+}
+
+.eyes {
+    opacity: 0;
+    animation: blink 4s ease-in-out infinite;
+}
+
+.nose {
+    font-size: 12px;
+    color: var(--main);
+    position: absolute;
+    rotate: 180deg;
+    top: 33px;
+    left: 71px;
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.brow {
+    font-size: 25px;
+    opacity: 0;
+    transition: all 400ms;
+}
+
+#brow1 {
+    position: absolute;
+    rotate: 80deg;
+    top: -8px;
+    left: 61px;
+}
+
+#brow2 {
+    position: absolute;
+    rotate: -80deg;
+    top: -8px;
+    left: 83px;
+}
+
+#title-long span {
+    transition: all 400ms;
+}
+
+footer {
+    padding: 40px 40px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    left: 50%;
+}
+
+footer a:first-child {
+    margin-left: 33%;
+}
+
+#email {
+    float: right;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition: opacity 600ms, visibility 600ms;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    aspect-ratio: 1;
+    border: 15px solid white;
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    z-index: 9999;
+    animation: loading 600ms ease infinite;
+
+}
+
+@keyframes loading {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(1turn);}
+}

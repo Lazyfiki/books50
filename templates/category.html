@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>Category | Books50</title>
+    <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='/css/header.css')}}">
+    <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='/css/category.css')}}">
+{% endblock %}
+{% block nav %}
+
+<li>
+    <a id="selected" href="/category">
+        b<span>o</span>o<span>k</span>s
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a id="notdone">
+        u<span>n</span>r<span>e</span>a<span>d</span>y
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a id="notdone">
+        u<span>n</span>r<span>e</span>a<span>d</span>y
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a href="/about">
+        a<span>b</span>o<span>u</span>t <span>u</span>s
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a href="/contact">
+        c<span>o</span>n<span>t</span>a<span>c</span>t
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+{% endblock %}
+
+
+{% block body %}
+<main>
+    <div class="wrapper">
+        <div class="scroll-text">
+            <h2> Reading —— Books —— </h2>
+            <h2> Reading —— Books —— </h2>
+            <h2> Reading —— Books —— </h2>
+            <h2> Reading —— Books —— </h2>
+        </div>
+    </div>
+    <div id="books">
+        <ul>
+            <li class="rust-0-to-pro"><a href=""></a></li>
+            <li class="hackers-delight"><a href=""></a></li>
+            <li class="algorithms"><a href=""></a></li>
+            <li class="cracking"><a href=""></a></li>
+            <li class="artofwar"><a href=""></a></li>
+            <li class="nomouth"><a href=""></a></li>
+            <li class="dante"><a href=""></a></li>
+            <li class="ennui"><a href=""></a></li>
+        </ul>
+    </div>
+</main>
+<script src="{{url_for('.static', filename='element-scroll.js')}}"></script>
+{% endblock %}
+

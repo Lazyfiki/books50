@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block head %}{% endblock %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="loader"></div>
+        <div id="myNav" class="overlay">
+            <div class="header">
+                <div class="inner_header">
+                    <div class="logo_container-menu">
+                        <h1><a href="/">Books50</a></h1>
+                    </div>
+                    <ul class="nav">
+                        <a id="close"><li><img onclick="reset(),closeNav(),enableScroll()" id="test2" src="{{ url_for('static', filename='/img/close.svg') }}" alt=""></li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="overlay-content">
+                <div class="content1">
+                </div>
+                <div class="content2">
+                    <ul>
+                        {% block nav %}{% endblock %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header id="header">
+            <div class="inner_header">
+                <div class="logo_container">
+                    <h1 id='title-long'><a href="/">Book<span id="hid">s50</span></a>
+                        <div class="eyes" id="eye1"></div>
+                        <div class="eyes" id="eye2"></div>
+                        <div class="nose" id="nose">🔺</div>
+                        <div class="brow" id="brow1">(</div>
+                        <div class="brow" id="brow2">)</div>
+                    </h1>
+                </div>
+                <ul class="nav">
+                    <a href="/contact" id ="git" class="GetInTouch"><li>Get in touch</li></a>
+                    <a id="testing">
+                        <div>
+                            <img onclick="openNav(),disableScroll()" id="test" src="{{ url_for('static', filename='/img/menu2.svg') }}" alt="">
+                            <span class="circle-container">
+                                <span class="circle-pink"></span>
+                                <span class="circle-yellow"></span>
+                                <span class="circle-purple"></span>
+                            </span>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+        </header>
+        <div class="flex-wrapper">
+            {% block body %}{% endblock %}
+            <div id="blob"></div>
+            <div id="blur"></div>
+            <footer class="">
+                    <a href="">placeholder</a>
+                    <a href="">placeholder</a>
+                    <a href="">placeholder</a>
+                    <a href="">placeholder</a>
+                    <a id="email">hello@place.holder</a>
+            </footer>
+        </div>
+        <script src="{{url_for('.static', filename='scroll.js')}}"></script>
+        <script src="{{url_for('.static', filename='menu.js')}}"></script>
+        <script src="{{url_for('.static', filename='blob.js')}}"></script>
+        <script src="{{url_for('.static', filename='loader.js')}}"></script>
+    </body>
+</html>

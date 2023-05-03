@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>About | Books50</title>
+    <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='header.css')}}">
+    <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='about.css')}}">
+{% endblock %}
+{% block nav %}
+
+<li>
+    <a id="" href="/category">
+        w<span>o</span>r<span>k</span>
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a>
+        s<span>o</span>l<span>u</span>t<span>i</span>o<span>n</span>s
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a>
+        i<span>n</span>s<span>i</span>g<span>h</span>t<span>s</span>
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a href="/about" id="selected">
+        a<span>b</span>o<span>u</span>t <span>u</span>s
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a>
+        c<span>o</span>n<span>t</span>a<span>c</span>t
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+{% endblock %}
+
+
+{% block body %}
+<main>
+</main>
+{% endblock %}

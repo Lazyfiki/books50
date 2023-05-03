@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>Contact us</title>
+    <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='/css/header.css')}}">
+    <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='/css/contacts.css')}}">
+{% endblock %}
+{% block nav %}
+
+<li>
+    <a id="" href="/category">
+        b<span>o</span>o<span>k</span>s
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a id="notdone">
+        u<span>n</span>r<span>e</span>a<span>d</span>y
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a id="notdone">
+        u<span>n</span>r<span>e</span>a<span>d</span>y
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a href="/about">
+        a<span>b</span>o<span>u</span>t <span>u</span>s
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a id="selected" href="/contact">
+        c<span>o</span>n<span>t</span>a<span>c</span>t
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+{% endblock %}
+
+
+{% block body %}
+<main>
+    <div class="title-container">
+        <h2>Hello! <br>We are happy to see You on<br> this page. Please leave us<br> a message.</h2>
+    </div>
+    <div class="signup">
+        <label for="">Your name:</label>
+        <label class="second" for="">Phone:</label> <br>
+        <input type="" name="" value="">
+        <input type="number" name="" value="">
+        <label for="">Email:</label> <br>
+        <label class="second" id="country" for="">Country/City:</label> <br>
+        <input type="" name="" value="">
+        <input type="" name="" value="">
+        <label for="">Message:</label> <br>
+        <textarea id="msg" rows="" cols=""></textarea>
+        <a id="send" href="">Send message</a>
+        <input id="file" type="file">
+    </div>
+</main>
+<script src="{{url_for('.static', filename='element-scroll.js')}}"></script>
+{% endblock %}

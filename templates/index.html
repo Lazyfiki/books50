@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>Books50</title>
+    <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='/css/header.css')}}">
+    <link rel="stylesheet"  type="text/css" href="{{url_for('.static', filename='/css/style.css')}}">
+{% endblock %}
+
+{% block nav %}
+<li>
+    <a href="/category">
+        b<span>o</span>o<span>k</span>s
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a id="notdone">
+        u<span>n</span>r<span>e</span>a<span>d</span>y
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a id="notdone">
+        u<span>n</span>r<span>e</span>a<span>d</span>y
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a href="/about">
+        a<span>b</span>o<span>u</span>t <span>u</span>s
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+<li>
+    <a href="/contact">
+        c<span>o</span>n<span>t</span>a<span>c</span>t
+        <div class="bar bar-pink"></div>
+        <div class="bar bar-yellow"></div>
+        <div class="bar bar-purple"></div>
+    </a>
+</li>
+{% endblock %}
+
+{% block body %}
+
+<main>
+    <section class="inner_main">
+        <div>
+            <img src="{{ url_for('static', filename='/img/rust.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='/img/hackersdelight.png') }}" alt="">
+            <img src="{{ url_for('static', filename='/img/dante.jpg') }}" alt="">
+        </div>
+        <h2>Collect and read the best books <span>easily</span></h2>
+        <div id="second-row">
+            <img src="{{ url_for('static', filename='/img/ennui.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='/img/artofwar.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='/img/nomouth.jpg') }}" alt="">
+        </div>
+        <div class="text">
+            <p>
+            Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+            reprehenderit enim labore culpa sint ad nisi Lorem pariatur
+            mollit ex esse exercitation amet.
+            </p>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
